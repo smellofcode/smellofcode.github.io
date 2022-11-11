@@ -1,0 +1,42 @@
+# Site settings
+title: The Smell of code
+description: "t.b.d."
+author: Maciej Małecki
+name: "maciejmalecki"
+email: "malecki.maciej@gmail.com"
+url: "https://smellofcode.github.io"
+
+# Build settings
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+repository: "smellofcode/smellofcode.github.io"
+username: smellofcode
+repo: smellofcode.github.io
